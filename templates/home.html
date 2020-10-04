@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+
+{% block body %}
+
+{% for alphabet in results %}
+    
+    
+
+          
+              <h1 style="text-align: center;" >{{ alphabet.letter }}</h1>
+           	<br>
+                <p style="text-align: center;"> {{ alphabet.pronunciation }}</p>
+                <br>
+                {% for join_alphabet in join_letters %}
+                    <h3>{{alphabet.letter}}{{ join_alphabet.join_letter }},{{ alphabet.pronunciation }}-{{ join_alphabet.join_letter_pronunciation }}</h3><h3></h3>
+                {% endfor %} 
+ 
+    <hr>
+    <br>
+       
+{% endfor %}
+
+  {% endblock %}
