@@ -1,1 +1,0 @@
-web: gunicorn banglaglyph.wsgi --log-file -
